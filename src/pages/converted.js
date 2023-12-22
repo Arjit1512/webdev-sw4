@@ -55,7 +55,7 @@ function Start() {
             </div>
 
             <div class='feed feed1'>
-                <img class='dp111' src="../sources/unga1.jpeg" alt="Profile Image">
+                <img class='dp111' src="./unga1.jpeg" alt="Profile Image">
                 <div class='ungah4'>
                     <h4 class='username'><nobr>Siddharth Goyal</nobr></h4>
                 </div>
@@ -89,13 +89,13 @@ function Start() {
     <section id='last'>
     <!-- Feed 1 -->
     <div class='feed'>
-        <img src="../sources/pic1.jpeg" alt="Article Image">
+        <img src="./pic1.jpeg" alt="Article Image">
         <h4>Article</h4>
         <div class='flex-btw'>
             <h3>What if famous brands had regular fonts? Meet RegulaBrands!</h3>
         </div>
         <p>I've worked in UX for the better part of a decade. From now on, I plan to rei..</p>
-        <img class='dp' src="../sources/dp1.jpeg" alt="Author's Profile Image">
+        <img class='dp' src="./dp1.jpeg" alt="Author's Profile Image">
         <h4 class='username'>Sarthak Kamra</h4>
         <div class='flex-btw'>
             <p class='views'>1.4k views</p>
@@ -111,7 +111,7 @@ function Start() {
                 <h2>RECOMMENDED GROUPS</h2>
                 <!-- Recommended Group 1 -->
                 <div class='flex-btw flex-lists'>
-                    <img src="../sources/l1.jpeg" alt="Leisure Group Image">
+                    <img src="./l1.jpeg" alt="Leisure Group Image">
                     <div class='leisure'>
                         <p>Leisure</p>
                     </div>
@@ -119,7 +119,7 @@ function Start() {
                 </div>
                 <!-- Recommended Group 2 -->
                 <div class='flex-btw flex-lists'>
-                    <img src="../sources/l2.jpeg" alt="Activism Group Image">
+                    <img src="./l2.jpeg" alt="Activism Group Image">
                     <div class='leisure'>
                         <p>Activism</p>
                     </div>
@@ -127,7 +127,7 @@ function Start() {
                 </div>
                 <!-- Recommended Group 3 -->
                 <div class='flex-btw flex-lists'>
-                    <img src="../sources/l3.jpeg" alt="MBA Group Image">
+                    <img src="./l3.jpeg" alt="MBA Group Image">
                     <div class='leisure'>
                         <p>MBA</p>
                     </div>
@@ -135,7 +135,7 @@ function Start() {
                 </div>
                 <!-- Recommended Group 4 -->
                 <div class='flex-btw flex-lists'>
-                    <img src="../sources/l4.jpeg" alt="Theory Group Image">
+                    <img src="./l4.jpeg" alt="Theory Group Image">
                     <div class='leisure'>
                         <p>Theory</p>
                     </div>
@@ -146,13 +146,13 @@ function Start() {
     </div>
     
     <div class='feed'>
-    <img src="../sources/pic2.jpg" alt="Education Image">
+    <img src="./pic2.jpg" alt="Education Image">
     <h4>Education</h4>
     <div class='flex-btw'>
         <h3>Tax Benefits for Investment under National Pen<br>Scheme launched by Government</h3>
         </div>
     <p>I've worked in UX for the better part of a decade. From now on, I plan to rei..</p>
-    <img class='dp' src="../sources/dp2.jpeg" alt="Author's Profile Image">
+    <img class='dp' src="./dp2.jpeg" alt="Author's Profile Image">
     <h4 class='username'>Sarah West</h4>
     <div class='flex-btw'>
         <p class='views'>1.4k views</p>
@@ -161,7 +161,7 @@ function Start() {
 
 
 <div class='feed'>
-    <img src="../sources/pic3.jpg" alt="Meetup Image">
+    <img src="./pic3.jpg" alt="Meetup Image">
     <h4>Meetup</h4>
     <div class='flex-btw'>
         <h3>Finance & Investment Elite Social Mixer Website<br>@Lujiazui</h3>
@@ -177,7 +177,7 @@ function Start() {
     </div>
     <button class='meetup'>Visit Website</button>
     <div class='test3'>
-        <img class='dp dp3' src="../sources/dp3.jpeg" alt="Author's Profile Image">
+        <img class='dp dp3' src="./dp3.jpeg" alt="Author's Profile Image">
         <h4 class='username username3'>Ronal Jones</h4>
     </div>
 
@@ -202,7 +202,7 @@ function Start() {
     </div>
     <button class='meetup' style='color: green;'>Apply on Timesjobs</button>
     <div class='test3'>
-        <img class='dp dp3 dp4' src='../sources/dp1.jpeg' alt="Joseph Gray's Profile Image">
+        <img class='dp dp3 dp4' src='./dp1.jpeg' alt="Joseph Gray's Profile Image">
         <h4 class='username username3'>Joseph Gray</h4>
     </div>
 
