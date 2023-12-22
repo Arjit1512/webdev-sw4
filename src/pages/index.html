@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./app.css">
+    <title>ATG World</title>
+    <script src="./popup.js" defer></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <section id='navbar'>
+        <div class='navbar'>
+            <a class='navbar-brand'><span>ATG</span>.WORLD</a>
+            <div class='navbar-search'>
+                <input type='text' value='  Search for your favorite groups in ATG' name='search'></input>
+            </div>
+            <p id="createAccount" onclick="showPopup()" class='navbar-click' style='color: blue; cursor: pointer'>Create account. It's free!</p>
+
+        </div>
+    </section>
+
+    <section id="hero1">
+        <button id='joinGroup' class='join-grp'>Join Group</button>
+        <div class="about">
+            <div class='move'>
+                <button id='goBack' class='join-grp join-grp2'>&lt;--</button>
+            </div>
+            <h1>Computer Engineering</h1>
+            <h5>142,765 Computer Engineers follow this</h5>
+        </div>
+    </section>
+
+    <section id='posts'>
+        <div class='posts-div'>
+            <ul id="navbar-posts">
+                <li>
+                    <a class='active' style='font-size: 16px'>
+                        <nobr>All Posts(32)</nobr>
+                    </a>
+                </li>
+                <button class='filter-btn'>
+                    <nobr>Filter: All</nobr>
+                </button>
+                <li>
+                    <a>Article</a>
+                </li>
+                <li>
+                    <a>Event</a>
+                </li>
+                <li>
+                    <a>Education</a>
+                </li>
+                <li>
+                    <a>Job</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class='posts2-div'>
+            <ul id="navbar-posts2">
+                <button class='b1'>
+                    <nobr>Write a Post</nobr>
+                </button>
+                <button id='joinGroup2Btn' class='b2'>
+                    <nobr>Join Group</nobr>
+                </button>
+            </ul>
+        </div>
+        <div class='pink-circle'>
+            <button style="position: relative; left: 0%;" id='openEditPopupBtn' onclick="showPopup()" class='static-btn'><i class="fas fa-edit"></i></button>
+        </div>
+    </section>
+
+    <section id='last'>
+        <div class='feed'>
+            <img src='../sources/pic1.jpeg' alt='Pic 1' />
+            <h4>Article</h4>
+            <div class='flex-btw'>
+                <h3>What if famous brands had regular fonts? Meet<br></br>RegulaBrands!</h3>
+                <button class='icons more'><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+            <p>I've worked in UX for the better part of a decade. From now on, I plan to rei..</p>
+            <img class='dp' src='../sources/dp1.jpeg' alt='DP 1' />
+            <h4 class='username'>Sarthak Kamra</h4>
+            <div class='flex-btw'>
+                <p class='views'>1.4k views</p>
+                <button class='icons share bt-share'><i class="fas fa-share"></i></button>
+            </div>
+            <div class='last2'>
+                <div class='p3 loc3'>
+                    <button class='icons more bt3 bt1'><i class="fas fa-edit"></i></button>
+                    <p class='border3'>
+                        <nobr>Noida, India</nobr>
+                    </p>
+                    <p>Your location will help us<br></br> serve better and extend a personalised experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Feed -->
+        <div class='feed'>
+            <img src='../sources/pic2.jpg' alt='Pic 2' />
+            <h4>Education</h4>
+            <div class='flex-btw'>
+                <h3>Tax Benefits for Investment under National Pen<br></br>Scheme launched by Government</h3>
+                <button class='icons more'><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+            <p>I've worked in UX for the better part of a decade. From now on, I plan to rei..</p>
+            <img class='dp' src='../sources/dp2.jpeg' alt='DP 2' />
+            <h4 class='username'>Sarah West</h4>
+            <div class='flex-btw'>
+                <p class='views'>1.4k views</p>
+                <button class='icons share bt-share'><i class="fas fa-share"></i></button>
+            </div>
+        </div>
+
+        <!-- Third Feed -->
+        <div class='feed'>
+            <img src='../sources/pic3.jpg' alt='Pic 3' />
+            <h4>Meetup</h4>
+            <div class='flex-btw'>
+                <h3>Finance & Investment Elite Social Mixer Website<br></br>@Lujiazui</h3>
+                <button class='icons more'><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+            <div class='more3'>
+                <button class='icons more bt3'><i class="fas fa-shopping-bag"></i></button>
+                <div class='p3'>
+                    <p class="private">
+                        <nobr>Fri, 12 Oct, 2018</nobr>
+                    </p>
+                </div>
+                <div class='p3 loc3'>
+                    <p class="private">
+                        <nobr>Ahmedabad, India</nobr>
+                    </p>
+                </div>
+            </div>
+            <button class='meetup'>Visit Website</button>
+            <div class='test3'>
+                <img class='dp dp3' src='../sources/dp3.jpeg' alt='DP 3' />
+                <h4 class='username username3'>Ronal Jones</h4>
+            </div>
+            <div class='flex-btw flex-btw3'>
+                <p class='views views3'>1.4k views</p>
+                <button class='icons share bt-share bt-share3'><i class="fas fa-share"></i></button>
+            </div>
+        </div>
+
+        <!-- Fourth Feed -->
+        <div class='feed'>
+            <h4>Job</h4>
+            <div class='flex-btw'>
+                <h3>Software Development Elite Social Mixer Website</h3>
+                <button class='icons more'><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+            <div class='more3'>
+                <button class='icons more bt3'><i class="fas fa-shopping-bag"></i></button>
+                <div class='p3'>
+                    <p class="private">
+                        <nobr>Innovaccer Analytics Private Ltd.</nobr>
+                    </p>
+                </div>
+                <div class='p3 loc3'>
+                    <p class="private">
+                        <nobr>Noida, India</nobr>
+                    </p>
+                </div>
+            </div>
+            <button class='meetup' style='color: green'>Apply on Timesjobs</button>
+            <div class='test3'>
+                <img class='dp dp3 dp4' src='../sources/dp1.jpeg' alt='DP 4' />
+                <h4 class='username username3'>Joseph Gray</h4>
+            </div>
+            <div class='flex-btw flex-btw3'>
+                <p class='views views3'>1.4k views</p>
+                <button class='icons share bt-share bt-share3'><i class="fas fa-share"></i></button>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <script>
+        function showPopup() {
+        // Load and execute the script dynamically
+        const script = document.createElement('script');
+        script.src = './popup.js';
+        document.head.appendChild(script);
+    }
+
+        // Add event listener to the Leave Group button
+        document.getElementById('joinGroup2Btn').addEventListener('click', function (event) {
+            // Simulating route navigation
+            event.preventDefault();
+            
+            // Redirect to the "index.html" file
+            window.location.href = 'home.html';
+        });
+    
+    </script> 
+    
+</body>
+
+</html>

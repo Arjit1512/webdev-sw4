@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="path/to/your/react-icons-css-file.css">
+    <title>Popup</title>
+</head>
+<body>
+
+<div id="overlay" class="overlay">
+    <div id="popup" class="popup">
+        <div class="close-btn" id="closeBtn">
+            <span class="icon-close">CLOSE ICON</span>
+        </div>
+        <div class='div1'>
+            <h2 id="popupTitle">Create Account</h2>
+            <form id="popupForm">
+                <!-- Input fields go here based on your JSX code -->
+                <button type="submit" id="submitBtn">Create Account</button>
+            </form>
+        </div>
+        <div class='div2'>
+            <p id="toggleText">Already have an account?</p>
+            <a id="toggleLink" style="position: absolute; color: blue; top: 3.8%; cursor: pointer; left: 60%;">
+                <nobr>Sign In</nobr>
+            </a>
+        </div>
+        <img src="../sources/login.png" class='login-img' alt="">
+        <div class='p555'>
+            <p>
+                By Signing Up you're agreeing to our <br>
+                Terms & Conditions, Privacy policy
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="path/to/your/react-icons-js-file.js"></script>
+<script src="path/to/your/react-router-dom-js-file.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const overlay = document.getElementById("overlay");
+        const closeBtn = document.getElementById("closeBtn");
+        const popupTitle = document.getElementById("popupTitle");
+        const popupForm = document.getElementById("popupForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const toggleText = document.getElementById("toggleText");
+        const toggleLink = document.getElementById("toggleLink");
+
+        // Function to toggle between Sign Up and Sign In
+        function toggleSignIn() {
+            const isSignUp = popupTitle.innerText === "Create Account";
+            popupTitle.innerText = isSignUp ? "Sign In" : "Create Account";
+            toggleText.innerText = isSignUp ? "Don't have an account?" : "Already have an account?";
+            toggleLink.innerText = isSignUp ? "Create Account" : "Sign In";
+        }
+
+        // Event listener for close button
+        closeBtn.addEventListener("click", function () {
+            overlay.style.display = "none";
+        });
+
+        // Event listener for form submission
+        popupForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Handle form submission logic here
+            // You can make an AJAX request or any other logic you need
+            // After handling the logic, you can close the popup
+            overlay.style.display = "none";
+        });
+
+        // Event listener for toggling between Sign Up and Sign In
+        toggleLink.addEventListener("click", toggleSignIn);
+    });
+
+
+    function showPopup() {
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "flex";
+    }
+
+    function closePopup() {
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const closeBtn = document.getElementById("closeBtn");
+        const popupForm = document.getElementById("popupForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const toggleLink = document.getElementById("toggleLink");
+
+        // Event listener for close button
+        closeBtn.addEventListener("click", function () {
+            closePopup();
+        });
+
+        // Event listener for form submission
+        popupForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Handle form submission logic here
+            // You can make an AJAX request or any other logic you need
+            // After handling the logic, you can close the popup
+            closePopup();
+        });
+
+        // Event listener for toggling between Sign Up and Sign In
+        toggleLink.addEventListener("click", function () {
+            const popupTitle = document.getElementById("popupTitle");
+            const toggleText = document.getElementById("toggleText");
+            const isSignUp = popupTitle.innerText === "Create Account";
+            popupTitle.innerText = isSignUp ? "Sign In" : "Create Account";
+            toggleText.innerText = isSignUp ? "Don't have an account?" : "Already have an account?";
+            toggleLink.innerText = isSignUp ? "Create Account" : "Sign In";
+        });
+
+    });
+</script>
+
+</body>
+</html>
